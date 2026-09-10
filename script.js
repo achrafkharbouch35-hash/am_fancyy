@@ -35,7 +35,7 @@ const products = [
         price: 349,
         badge: "BEST-SELLER",
         description: "Pyjama médical moderne, confortable et respirant.",
-        image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=85",
+        image: "A10.jpg",
         colors: ["#e9eeee", "#172f2d", "#dcece8"]
     },
 
@@ -46,7 +46,7 @@ const products = [
         price: 429,
         badge: "NOUVEAU",
         description: "Coupe premium pensée pour les longues journées.",
-        image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=900&q=85",
+        image: "A7.jpg",
         colors: ["#f4f4f1", "#9abbb6", "#263e3d"]
     },
 
@@ -57,7 +57,7 @@ const products = [
         price: 249,
         badge: "",
         description: "Blouse blanche classique, légère et élégante.",
-        image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=85",
+        image: "A8.jpg",
         colors: ["#ffffff"]
     },
 
@@ -68,7 +68,7 @@ const products = [
         price: 299,
         badge: "NOUVEAU",
         description: "Blouse professionnelle avec coupe moderne.",
-        image: "https://images.unsplash.com/photo-1580281657527-47f249e8f3b5?auto=format&fit=crop&w=900&q=85",
+        image: "A9.jpg",
         colors: ["#ffffff", "#edf4f2"]
     },
 
@@ -79,7 +79,7 @@ const products = [
         price: 399,
         badge: "",
         description: "Combinaison professionnelle pratique et résistante.",
-        image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=85",
+        image: "A11",
         colors: ["#e9efed", "#263f3d"]
     },
 
@@ -90,7 +90,7 @@ const products = [
         price: 299,
         badge: "POPULAIRE",
         description: "Polaire douce pour rester au chaud au travail.",
-        image: "https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=900&q=85",
+        image: "A12",
         colors: ["#eff3f1", "#243b3a"]
     },
 
@@ -101,7 +101,7 @@ const products = [
         price: 349,
         badge: "",
         description: "Polaire légère et chaude pour les journées fraîches.",
-        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
+        image: "A4",
         colors: ["#ffffff", "#cadbd8"]
     },
 
@@ -112,7 +112,7 @@ const products = [
         price: 79,
         badge: "ESSENTIEL",
         description: "Gants médicaux adaptés à un usage professionnel.",
-        image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=85",
+        image: "A5",
         colors: ["#e7f3ef", "#ffffff"]
     }
 
