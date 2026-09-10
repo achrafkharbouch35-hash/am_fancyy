@@ -5,32 +5,37 @@
 
 /* ---------- TOKENS ---------- */
 :root{
-  /* Couleurs — fond clair, ambiance médicale douce */
-  --bg:            #F7F6F1;   /* fond général, blanc cassé chaud */
-  --bg-soft:       #EFEEE6;   /* sections alternées */
-  --bg-deep:       #E7E9E2;   /* accents de profondeur */
-  --card:          #FFFFFF;
-  --ink:           #2B2F2C;   /* texte principal, gris foncé chaud */
-  --ink-soft:      #6B7268;   /* texte secondaire */
-  --line:          #E1E0D6;
+  /* Couleurs — fond rose clair, doux et élégant */
+  --bg:            #FFF8F8;   /* fond général rose très pâle */
+  --bg-soft:       #FCEFF1;   /* sections alternées */
+  --bg-deep:       #F8E3E7;   /* profondeur / accents */
+  --card:          #FFFFFF;   /* cartes blanches */
 
-  --sage:          #5C7A66;   /* vert sauge — couleur principale */
-  --sage-dark:     #43604E;
-  --sage-tint:     #E7EEE7;
+  --ink:           #332C2E;   /* texte principal */
+  --ink-soft:      #7A6D70;   /* texte secondaire */
+  --line:          #EEDCDF;   /* bordures */
 
-  --blue:          #7FA0B3;   /* bleu médical doux — secondaire */
-  --blue-tint:     #EAF1F4;
+  /* Rose principal */
+  --sage:          #C98291;   /* rose poudré principal */
+  --sage-dark:     #A85F70;   /* rose foncé */
+  --sage-tint:     #F8E4E8;   /* rose très clair */
 
-  --clay:          #C97B5B;   /* accent chaud pour badges/promo */
+  /* Rose secondaire */
+  --blue:          #C99AA5;
+  --blue-tint:     #F8ECEE;
 
+  /* Accent chaud */
+  --clay:          #D9898F;
+
+  /* WhatsApp */
   --whatsapp:      #3F8C5F;
 
   --radius-s: 10px;
   --radius-m: 18px;
   --radius-l: 28px;
 
-  --shadow-soft: 0 20px 45px -25px rgba(43,47,44,0.35);
-  --shadow-card: 0 14px 30px -22px rgba(43,47,44,0.45);
+  --shadow-soft: 0 20px 45px -25px rgba(110,70,80,0.30);
+  --shadow-card: 0 14px 30px -22px rgba(110,70,80,0.35);
 
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
