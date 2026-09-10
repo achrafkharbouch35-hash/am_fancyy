@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soins & Style — Pyjamas médicaux, blouses et vêtements de travail</title>
+<meta name="description" content="Pyjamas médicaux, blouses et vêtements de travail professionnels, pensés pour le confort et l'élégance. Commande simple sur WhatsApp.">
+
+<!-- Polices : Fraunces (titres) + Manrope (texte courant) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ÉCRAN DE CHARGEMENT ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">
+    <span>Soins</span><span class="preloader-amp">&amp;</span><span>Style</span>
+  </div>
+  <div class="preloader-line"><span></span></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<!-- Modifier le nom de la boutique ici -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#accueil" class="nav-logo">Soins<span>&amp;</span>Style</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#accueil" class="nav-link">Accueil</a>
+      <a href="#collections" class="nav-link" data-filter-link="pyjamas">Pyjamas médicaux</a>
+      <a href="#collections" class="nav-link" data-filter-link="blouses">Blouses</a>
+      <a href="#collections" class="nav-link" data-filter-link="travail">Vêtements de travail</a>
+      <a href="#collections" class="nav-link" data-filter-link="accessoires">Accessoires</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h2l1.6 9.6a2 2 0 0 0 2 1.7h7.3a2 2 0 0 0 2-1.6L20.5 9H7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.3" fill="currentColor"/><circle cx="17" cy="20" r="1.3" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <!-- Numéro WhatsApp modifiable dans script.js (variable WHATSAPP_NUMBER) -->
+      <a href="#" class="btn btn-whatsapp nav-whatsapp" id="navWhatsapp">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="wa-icon"><path d="M12 2C6.48 2 2 6.36 2 11.75c0 2 .55 3.86 1.5 5.46L2 22l4.97-1.42a10.1 10.1 0 0 0 5.03 1.34c5.52 0 10-4.36 10-9.75S17.52 2 12 2Zm0 17.6c-1.6 0-3.1-.44-4.38-1.2l-.31-.18-2.95.84.85-2.83-.2-.3a7.98 7.98 0 0 1-1.31-4.38c0-4.41 3.72-8 8.3-8s8.3 3.59 8.3 8-3.72 8.05-8.3 8.05Zm4.55-5.98c-.25-.13-1.47-.72-1.7-.8-.23-.09-.39-.13-.56.13-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.21-.74-.65-1.23-1.46-1.38-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.44-.06-.13-.56-1.34-.77-1.83-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.48-.02s-.44.06-.67.31c-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.02 2.57.13.16 1.75 2.67 4.24 3.74.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+        Commander
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero-inner">
+    <div class="hero-copy" data-reveal>
+      <p class="hero-kicker">Confection professionnelle depuis 2015</p>
+      <h1 class="hero-title">Le confort professionnel,<br>réinventé.</h1>
+      <p class="hero-sub">Pyjamas médicaux, blouses et vêtements de travail pensés pour accompagner vos journées avec confort et élégance.</p>
+      <div class="hero-actions">
+        <a href="#collections" class="btn btn-primary">Découvrir la collection</a>
+        <a href="#" class="btn btn-outline js-whatsapp-generic">Commander sur WhatsApp</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num" data-count="4200">0</span><span class="hero-stat-label">Professionnels habillés</span></div>
+        <div class="hero-stat"><span class="hero-stat-num" data-count="98">0</span><span class="hero-stat-label">% de clientes satisfaites</span></div>
+        <div class="hero-stat"><span class="hero-stat-num" data-count="30">0</span><span class="hero-stat-label">Modèles disponibles</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-reveal>
+      <div class="hero-frame">
+        <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1200&auto=format&fit=crop" alt="Blouse médicale professionnelle" class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?q=80&w=600&auto=format&fit=crop" alt="Pyjama médical" class="hero-img-float hero-img-float-1">
+        <div class="hero-badge-float">
+          <span class="hero-badge-dot"></span>
+          Nouvelle collection Automne
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-cue"><span></span></div>
+</section>
+
+<!-- ============ AVANTAGES ============ -->
+<section class="advantages">
+  <div class="section-inner advantages-grid">
+    <div class="advantage" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.8 8.9 2.3 5 6 5c2 0 3.3 1.1 4 2.2C10.7 6.1 12 5 14 5c3.7 0 5.2 3.9 3.5 7.5C19 16.65 12 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <h3>Confort toute la journée</h3>
+      <p>Coupes ergonomiques et tissus doux pensés pour de longues journées sur le terrain.</p>
+    </div>
+    <div class="advantage" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v11H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 19h8M12 15v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <h3>Matières de qualité</h3>
+      <p>Textiles résistants, faciles d'entretien, sélectionnés pour tenir dans la durée.</p>
+    </div>
+    <div class="advantage" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <h3>Tailles disponibles</h3>
+      <p>Du XS au XXL, pour accompagner toutes les silhouettes avec le même soin.</p>
+    </div>
+    <div class="advantage" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 2 7l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <h3>Commande simple</h3>
+      <p>Aucun compte, aucun paiement en ligne : tout se règle directement sur WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLECTIONS ============ -->
+<section class="collections" id="collections-anchor">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">Nos univers</p>
+      <h2 class="section-title">Nos collections</h2>
+    </div>
+
+    <div class="collections-grid" id="collections">
+      <a href="#produits" class="collection-card collection-card--large" data-filter="pyjamas" data-reveal>
+        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?q=80&w=900&auto=format&fit=crop" alt="Pyjamas médicaux">
+        <div class="collection-overlay"></div>
+        <div class="collection-content">
+          <span class="collection-emoji">🩺</span>
+          <h3>Pyjamas médicaux</h3>
+          <p>Ensembles deux pièces pour un confort sans compromis, en service comme au quotidien.</p>
+          <span class="collection-link">Voir la collection</span>
+        </div>
+      </a>
+
+      <a href="#produits" class="collection-card" data-filter="blouses" data-reveal>
+        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=700&auto=format&fit=crop" alt="Blouses médicales">
+        <div class="collection-overlay"></div>
+        <div class="collection-content">
+          <span class="collection-emoji">🥼</span>
+          <h3>Blouses médicales</h3>
+          <p>Silhouettes nettes et fonctionnelles pour une allure impeccable.</p>
+          <span class="collection-link">Voir la collection</span>
+        </div>
+      </a>
+
+      <a href="#produits" class="collection-card" data-filter="travail" data-reveal>
+        <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=700&auto=format&fit=crop" alt="Vêtements de travail">
+        <div class="collection-overlay"></div>
+        <div class="collection-content">
+          <span class="collection-emoji">👔</span>
+          <h3>Vêtements de travail</h3>
+          <p>Des pièces robustes conçues pour les métiers exigeants.</p>
+          <span class="collection-link">Voir la collection</span>
+        </div>
+      </a>
+
+      <a href="#produits" class="collection-card collection-card--wide" data-filter="accessoires" data-reveal>
+        <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=900&auto=format&fit=crop" alt="Accessoires professionnels">
+        <div class="collection-overlay"></div>
+        <div class="collection-content">
+          <span class="collection-emoji">🎒</span>
+          <h3>Accessoires professionnels</h3>
+          <p>Les indispensables qui complètent chaque tenue au quotidien.</p>
+          <span class="collection-link">Voir la collection</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUITS ============ -->
+<section class="products" id="produits">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">Boutique</p>
+      <h2 class="section-title">Nos produits</h2>
+    </div>
+
+    <div class="products-toolbar" data-reveal>
+      <div class="filter-chips" id="filterChips">
+        <button class="chip is-active" data-filter="tous">Tous</button>
+        <button class="chip" data-filter="pyjamas">Pyjamas</button>
+        <button class="chip" data-filter="blouses">Blouses</button>
+        <button class="chip" data-filter="travail">Vêtements de travail</button>
+        <button class="chip" data-filter="accessoires">Accessoires</button>
+      </div>
+
+      <div class="toolbar-controls">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="m20 20-3.2-3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Rechercher un produit…">
+        </div>
+        <select id="sortSelect" class="sort-select">
+          <option value="default">Trier par</option>
+          <option value="asc">Prix croissant</option>
+          <option value="desc">Prix décroissant</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+    <p class="products-empty" id="productsEmpty" hidden>Aucun produit ne correspond à votre recherche.</p>
+  </div>
+</section>
+
+<!-- ============ BANNIÈRE PROMO ============ -->
+<section class="promo">
+  <div class="section-inner promo-inner" data-reveal>
+    <div class="promo-copy">
+      <p class="section-kicker">Offre du moment</p>
+      <h2 class="promo-title">Votre tenue professionnelle mérite le meilleur.</h2>
+      <p class="promo-text">-15% sur la deuxième pièce achetée dans la même commande, ce mois-ci seulement.</p>
+      <a href="#produits" class="btn btn-primary">Découvrir les offres</a>
+    </div>
+    <div class="promo-visual">
+      <img src="https://images.unsplash.com/photo-1583912267550-7d5b2b0e5c05?q=80&w=800&auto=format&fit=crop" alt="Vêtements médicaux en promotion">
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS CLIENTS ============ -->
+<section class="testimonials" id="apropos">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">Elles nous font confiance</p>
+      <h2 class="section-title">Avis clients</h2>
+    </div>
+
+    <div class="testimonial-slider" data-reveal>
+      <button class="slider-arrow slider-arrow--prev" id="prevTestimonial" aria-label="Avis précédent">‹</button>
+
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial">
+          <p class="testimonial-quote">« Très confortable et la qualité est excellente. Je recommande à toutes mes collègues. »</p>
+          <p class="testimonial-author">— Sara B., infirmière</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">« J'ai adoré la coupe et les couleurs. Enfin des blouses qui ont du style. »</p>
+          <p class="testimonial-author">— Imane R., aide-soignante</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">« Commande très simple sur WhatsApp et livraison rapide. Une équipe très réactive. »</p>
+          <p class="testimonial-author">— Khadija T., médecin généraliste</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">« Les tissus tiennent parfaitement dans le temps malgré les lavages fréquents. »</p>
+          <p class="testimonial-author">— Yasmine E., pharmacienne</p>
+        </div>
+      </div>
+
+      <button class="slider-arrow slider-arrow--next" id="nextTestimonial" aria-label="Avis suivant">›</button>
+    </div>
+    <div class="slider-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="instagram">
+  <div class="section-inner">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="section-kicker">@soinsetstyle</p>
+      <h2 class="section-title">Nos dernières tenues</h2>
+      <!-- Lien Instagram modifiable ici -->
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn-outline">Suivez-nous sur Instagram</a>
+    </div>
+
+    <div class="instagram-grid" data-reveal>
+      <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=500&auto=format&fit=crop" alt="Tenue médicale sur Instagram">
+      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=500&auto=format&fit=crop" alt="Blouse médicale sur Instagram">
+      <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=500&auto=format&fit=crop" alt="Équipe médicale en tenue">
+      <img src="https://images.unsplash.com/photo-1571772805064-207c8435df79?q=80&w=500&auto=format&fit=crop" alt="Vêtement de travail professionnel">
+      <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=500&auto=format&fit=crop" alt="Pyjama médical sur Instagram">
+      <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=500&auto=format&fit=crop" alt="Accessoire professionnel">
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <a href="#accueil" class="nav-logo footer-logo">Soins<span>&amp;</span>Style</a>
+      <p>Pyjamas médicaux, blouses et vêtements de travail conçus pour accompagner chaque journée avec confort et élégance.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="#" id="footerWhatsapp" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#accueil">Accueil</a>
+      <a href="#collections">Collections</a>
+      <a href="#produits">Produits</a>
+      <a href="#apropos">À propos</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Catégories</h4>
+      <a href="#produits" data-filter-link="pyjamas">Pyjamas médicaux</a>
+      <a href="#produits" data-filter-link="blouses">Blouses</a>
+      <a href="#produits" data-filter-link="travail">Vêtements de travail</a>
+      <a href="#produits" data-filter-link="accessoires">Accessoires</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <!-- Coordonnées et horaires modifiables ici -->
+      <p>WhatsApp : +212 6 00 00 00 00</p>
+      <p>contact@soinsetstyle.ma</p>
+      <p>Lun – Sam : 9h – 19h</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Soins &amp; Style — Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- ============ PANIER (DRAWER) ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-drawer-head">
+    <h3>Votre panier</h3>
+    <button class="close-btn" id="closeCart" aria-label="Fermer le panier">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty">Votre panier est vide pour le moment.</div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">0 DH</span>
+    </div>
+    <button class="btn btn-whatsapp btn-block" id="cartWhatsappBtn">Commander sur WhatsApp</button>
+  </div>
+</aside>
+
+<!-- ============ FICHE PRODUIT (MODAL) ============ -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <button class="close-btn modal-close" id="closeModal" aria-label="Fermer">&times;</button>
+  <div class="modal-body">
+    <div class="modal-gallery">
+      <img id="modalMainImg" src="" alt="">
+      <div class="modal-thumbs" id="modalThumbs"></div>
+    </div>
+    <div class="modal-info">
+      <span class="modal-badge" id="modalBadge"></span>
+      <h3 id="modalName"></h3>
+      <p class="modal-category" id="modalCategory"></p>
+      <p class="modal-price" id="modalPrice"></p>
+      <p class="modal-desc" id="modalDesc"></p>
+
+      <div class="modal-option">
+        <span>Couleur</span>
+        <div class="option-pills" id="modalColors"></div>
+      </div>
+      <div class="modal-option">
+        <span>Taille</span>
+        <div class="option-pills" id="modalSizes"></div>
+      </div>
+      <div class="modal-option">
+        <span>Quantité</span>
+        <div class="qty-stepper">
+          <button id="qtyMinus">−</button>
+          <span id="qtyValue">1</span>
+          <button id="qtyPlus">+</button>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-outline btn-block" id="addToCartBtn">Ajouter au panier</button>
+        <button class="btn btn-whatsapp btn-block" id="modalWhatsappBtn">Commander sur WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
