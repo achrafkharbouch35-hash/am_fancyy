@@ -79,7 +79,7 @@ const products = [
         price: 399,
         badge: "",
         description: "Combinaison professionnelle pratique et résistante.",
-        image: "A11",
+        image: "A11.jpg",
         colors: ["#e9efed", "#263f3d"]
     },
 
@@ -90,7 +90,7 @@ const products = [
         price: 299,
         badge: "POPULAIRE",
         description: "Polaire douce pour rester au chaud au travail.",
-        image: "A12",
+        image: "A12.jpg",
         colors: ["#eff3f1", "#243b3a"]
     },
 
@@ -101,7 +101,7 @@ const products = [
         price: 349,
         badge: "",
         description: "Polaire légère et chaude pour les journées fraîches.",
-        image: "A4",
+        image: "A4.jpg",
         colors: ["#ffffff", "#cadbd8"]
     },
 
@@ -112,7 +112,7 @@ const products = [
         price: 79,
         badge: "ESSENTIEL",
         description: "Gants médicaux adaptés à un usage professionnel.",
-        image: "A5",
+        image: "A5.jpg",
         colors: ["#e7f3ef", "#ffffff"]
     }
 
