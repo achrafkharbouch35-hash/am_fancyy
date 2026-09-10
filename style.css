@@ -1,19 +1,21 @@
 :root {
 
-    --primary: #197c78;
-    --primary-dark: #126560;
-    --primary-light: #e7f5f3;
+    /* ================= COULEURS ================= */
 
-    --cream: #f8faf8;
-    --cream-2: #f1f6f4;
+    --primary: #d98fa3;
+    --primary-dark: #c8758d;
+    --primary-light: #fceef2;
+
+    --cream: #fff9fa;
+    --cream-2: #fdf3f6;
 
     --white: #ffffff;
 
-    --text: #18302f;
-    --text-light: #667876;
-    --border: #dfe9e6;
+    --text: #3b292f;
+    --text-light: #806d73;
+    --border: #f0dfe4;
 
-    --shadow: 0 20px 60px rgba(30, 70, 67, .08);
+    --shadow: 0 20px 60px rgba(180, 110, 130, .10);
 
     --radius: 22px;
 
